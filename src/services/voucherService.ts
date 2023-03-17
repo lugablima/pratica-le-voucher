@@ -2,7 +2,7 @@ import { Voucher } from "@prisma/client";
 import voucherRepository from "../repositories/voucherRepository";
 import { conflictError } from "../utils/errorUtils";
 
-const MIN_VALUE_FOR_DISCOUNT = 100;
+export const MIN_VALUE_FOR_DISCOUNT = 100;
 
 export type VoucherCreateData = Omit<Voucher, "id">;
 export interface VoucherApplyData {
